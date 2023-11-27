@@ -1,5 +1,7 @@
 import "./Homepage.css";
 
+import Aboutus from "./About";
+import Course from "./Course";
 import Navbar from "./Navbar";
 import React from "react";
 import ReviewSlider from "./ReviewSlider";
@@ -13,12 +15,10 @@ const Homepage = () => {
     <>
       <Navbar />
       <Slider />
-      <Reviews />
-      <ReviewSlider />
-
-      <div>
-        {/* <h1>Welcome to the Home Page</h1> */}
-        {/* <Link to="/login">Login</Link> */}
+      <div className="homepage">
+        <Aboutus />
+        <Reviews />
+        <Course />
       </div>
     </>
   );
