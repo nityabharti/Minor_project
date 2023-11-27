@@ -1,28 +1,34 @@
 .main_nav {
+  min-height: 75px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
   padding: 0 20px;
   background-color: #ffffff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .nav_items {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
-  border: 1px solid red;
   width: 60%;
-  gap: 20px;
+  gap: 25px;
   padding-right: 60px;
 }
-.image_sec {
-  border: 1px solid blue;
+.image_sec_nav {
   height: 40px;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.image_sec_nav img {
+  height: 30px;
+}
+.hamburger {
+  display: none;
 }
 .nav_items li {
   text-decoration: none;
@@ -32,8 +38,47 @@
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #2d4dc4;
 }
 
+.nav_btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 40px;
+  width: auto;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+.block {
+  display: grid;
+}
+.nav_btn:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
 @media (max-width: 800px) {
 }
 
@@ -41,4 +86,37 @@
 }
 
 @media (max-width: 500px) {
+  .main_nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_sec_nav {
+    width: 100%;
+  }
+  .nav_items {
+    display: none;
+  }
+  .nav_items_mobile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+  }
+  .nav_items_mobile li {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+  }
+  .nav_items_mobile li a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d4dc4;
+  }
+  .hamburger {
+    display: block;
+  }
 }
