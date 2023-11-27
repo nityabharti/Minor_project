@@ -43,6 +43,7 @@ const Slider = () => {
       responsive={responsive}
       swipeable={false}
       draggable={false}
+      customTransition="all .5"
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
       containerClass="carousel-container"

@@ -1,15 +1,18 @@
 import "./Homepage.css";
 
-import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import React from "react";
+import Reviews from "./Reviews";
 import Slider from "./Slider";
+
+// import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
     <>
       <Navbar />
       <Slider />
+      <Reviews />
 
       <div>
         {/* <h1>Welcome to the Home Page</h1> */}
