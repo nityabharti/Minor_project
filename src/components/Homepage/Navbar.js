@@ -12,12 +12,14 @@ const Navbar = () => {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtstzEy1Kge9rLE-XyAxH65V7NVaDBUf4orw&usqp=CAU"
             alt="logo"
           />
+
           <img
             onClick={() => {
               setShowMenue(!showMenue);
             }}
             className="hamburger"
             src="https://cdn-icons-png.flaticon.com/128/6015/6015685.png"
+            alt="hamburger"
           />
         </div>
         <ul className={`${showMenue ? "nav_items" : "nav_items_mobile"}`}>

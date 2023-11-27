@@ -1,7 +1,7 @@
 /* src/components/Reviews.css */
 .review-card {
-  width: 300px;
-  height: 200px;
+  width: 450px;
+  height: 250px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -28,11 +28,13 @@
 }
 
 .profile-pic {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
+  border: 6px solid #dadada;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 10px;
+  margin-top: 100px;
 }
 
 .profile-pic img {
@@ -46,4 +48,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+span {
+  font-weight: 800;
+  height: 50px;
+  color: gray;
 }
