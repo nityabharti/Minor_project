@@ -10,15 +10,11 @@ import img5 from "../../assets/img_5.png";
 import img6 from "../../assets/img_6.jpg";
 import { styled } from "@mui/material";
 
-// import img7 from "../../assets/img_7.png";
-
 const image = [img1, img2, img3, img4, img5, img6];
 
 const Image = styled("img")({
   height: "70%",
   width: "100%",
-  // borderRadius: 10,
-  marginTop: "2%",
 });
 const responsive = {
   desktop: {
