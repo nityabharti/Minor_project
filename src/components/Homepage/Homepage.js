@@ -1,12 +1,14 @@
 import "./Homepage.css";
 
 import Aboutus from "./About";
+import Contact from "./Contact";
 import Course from "./Course";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import React from "react";
-import ReviewSlider from "./ReviewSlider";
 import Reviews from "./Reviews";
 import Slider from "./Slider";
+import Teachers from "./Teachers";
 
 // import { Link } from "react-router-dom";
 
@@ -15,11 +17,15 @@ const Homepage = () => {
     <>
       <Navbar />
       <Slider />
+      <Reviews />
+
       <div className="homepage">
         <Aboutus />
-        <Reviews />
         <Course />
       </div>
+      <Teachers />
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,9 @@
 import "./reviews.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import React from "react";
+import Slider from "react-slick";
 import img1 from "../../assets/review_1.jpg";
 import img2 from "../../assets/review_2.jpg";
 import img3 from "../../assets/review_3.jpg";
@@ -45,11 +48,29 @@ const reviewsData = [
 ];
 
 const Reviews = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+
+    autoPlay: true,
+    autoPlaySpeed: 2000,
+
+    swipeable: false,
+    draggable: false,
+
+    dotListClass: "custom-dot-list-style",
+    itemClass: "carousel-item-padding-40-px",
+    containerClass: "carousel-container",
+    slidesToShow: 2, // Display two cards at a time
+    slidesToScroll: 2, // Scroll two cards at a time
+  };
   return (
-    <div>
-      {reviewsData.map((review, index) => (
-        <Review key={index} {...review} />
-      ))}
+    <div className="review-container">
+      <Slider {...settings}>
+        {reviewsData.map((review, index) => (
+          <Review key={index} {...review} />
+        ))}
+      </Slider>
     </div>
   );
 };
