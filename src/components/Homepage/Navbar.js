@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 import React, { useState } from "react";
 
 const Navbar = () => {
   const [showMenue, setShowMenue] = useState(true);
+  const navigate = useNavigate();
   return (
     <>
       <nav className="main_nav">
@@ -36,7 +38,14 @@ const Navbar = () => {
             <a href="#experience">contact us</a>
           </li>
           <li>
-            <button className="nav_btn">Admin </button>
+            <button
+              className="nav_btn"
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              Admin{" "}
+            </button>
           </li>
         </ul>
       </nav>
