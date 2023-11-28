@@ -10,8 +10,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import img1 from "../../assets/course_1.jpg";
 import img2 from "../../assets/course_2.jpg";
-import img3 from "../../assets/couse_3.jpg";
+import img3 from "../../assets/course_3.jpg";
 import img4 from "../../assets/course_4.jpg";
+import img5 from "../../assets/course_5.jpg";
 
 const carddata = [
   {
@@ -39,7 +40,7 @@ const carddata = [
       "This bootcamp covers HTML, CSS, JavaScript, and modern web development frameworks, providing hands-on experience in building web applications.",
   },
   {
-    imgUrl: "https://example.com/python.jpg",
+    imgUrl: img5,
     title: "Python Programming",
     description:
       "Python programming course covers the fundamentals of Python, data analysis, web scraping, and application development using Python.",

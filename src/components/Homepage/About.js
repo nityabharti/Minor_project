@@ -1,5 +1,6 @@
-import React from "react";
 import "./aboutus.css";
+
+import React from "react";
 
 const Aboutus = () => {
   return (
@@ -8,19 +9,29 @@ const Aboutus = () => {
         <div className="title_aboutus">
           <img
             height={40}
-            src="https://cdn-icons-png.flaticon.com/128/189/189664.png"
+            src="https://cdn-icons-png.flaticon.com/128/12958/12958731.png"
             alt="info"
           />
-          <h1>Title</h1>
+          <h1 style={{ color: " #2d4dc4 " }}>
+            {" "}
+            Welcome to Our Computer Classes
+          </h1>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          deleniti nisi cupiditate quae hic molestiae, omnis commodi quasi!
-          Voluptatum ipsam excepturi eveniet cumque illum dolor modi voluptas
-          molestiae at quod! Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Id amet placeat laboriosam eos eaque optio voluptatibus sit,
-          reiciendis neque quas, rerum aspernatur aliquid earum. Nostrum
-          repellendus omnis praesentium itaque recusandae?
+          Our Computer Classes is a distinguished educational hub with a
+          decade-long legacy in the realm of Computer Courses. Bringing forth a
+          diverse array of career-oriented, professional, short-term, and
+          certification programs, our curriculum is meticulously crafted by
+          seasoned academicians following extensive market analysis and
+          research. The instructional team comprises experienced and certified
+          faculty members dedicated to imparting knowledge. To stay abreast of
+          the ever-evolving tech landscape, our trainers consistently enhance
+          their technical prowess. Engaging students through a spectrum of
+          events like Techno Minds, placement workshops, and seminars, we foster
+          interactive learning, gearing individuals towards successful job
+          interviews and industry readiness. In summary, This Coaching Classes
+          shapes adept IT professionals via a multitude of courses delivered
+          through cutting-edge teaching methodologies.
         </p>
       </div>
     </div>
