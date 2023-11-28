@@ -4,7 +4,6 @@ import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import "./dashboard.css";
-import logo from "../../assets/logo.jpeg";
 import { useAuthContextProvider } from "../../Context/Authcontext";
 import axios from "../../api/axios";
 import swal from "sweetalert";
@@ -36,7 +35,12 @@ const Dashboard = () => {
         <div className="nav_section">
           <div className="profile_sec">
             <div className="profile">
-              <img height={60} width={60} src={logo} alt="pr" />
+              <img
+                height={60}
+                width={60}
+                src="https://cdn-icons-png.flaticon.com/128/1864/1864509.png"
+                alt="pr"
+              />
               <div className="user">
                 <p>{user.userdata.name}</p>
                 <p>{user.userdata.location}</p>
