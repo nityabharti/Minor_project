@@ -11,8 +11,9 @@ import Typography from "@mui/material/Typography";
 import img1 from "../../assets/course_1.jpg";
 import img2 from "../../assets/course_2.jpg";
 import img3 from "../../assets/course_3.jpg";
-import img4 from "../../assets/course_4.jpg";
+import img4 from "../../assets//course_4.jpg";
 import img5 from "../../assets/course_5.jpg";
+import img6 from "../../assets/course_6.jpg";
 
 const carddata = [
   {
@@ -45,11 +46,17 @@ const carddata = [
     description:
       "Python programming course covers the fundamentals of Python, data analysis, web scraping, and application development using Python.",
   },
+  {
+    imgUrl: img6,
+    title: "Typing",
+    description:
+      "Typing course designed to enhance your skills , improve your typing speed and empower your digital journey.",
+  },
 ];
 
 const CourseCard = ({ imgUrl, title, description }) => {
   return (
-    <Card sx={{ maxWidth: 300, maxHeight: 380 }}>
+    <Card sx={{ maxWidth: 350, maxHeight: 370 }}>
       <CardMedia
         component="img"
         alt="green iguana"

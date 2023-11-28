@@ -19,7 +19,7 @@ const Footer = () => {
       {/* Logo */}
       <div className="footer_logo">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtstzEy1Kge9rLE-XyAxH65V7NVaDBUf4orw&usqp=CAU"
+          src="https://www.shutterstock.com/image-vector/vector-icon-illustration-digital-media-600nw-1175859982.jpg"
           alt="logo"
         />
       </div>
