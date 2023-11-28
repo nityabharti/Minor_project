@@ -1,7 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 import React, { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenue, setShowMenue] = useState(true);
@@ -29,13 +30,17 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#skill">About Us</a>
+            <a href="#about">About Us</a>
           </li>
           <li>
-            <a href="#project">Teachers</a>
+            <a href="#courses">Courses</a>
           </li>
           <li>
-            <a href="#experience">contact us</a>
+            <a href="#teachers">Teachers</a>
+          </li>
+
+          <li>
+            <a href="contact">contact us</a>
           </li>
           <li>
             <button

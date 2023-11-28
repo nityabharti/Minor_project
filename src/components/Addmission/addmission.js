@@ -1,23 +1,25 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./addmission.css";
-import { mycourses, cateogry, batch, timing } from "./data";
-import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
-import InputLabel from "@mui/material/InputLabel";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
+
+import React, { useState } from "react";
+import { batch, cateogry, mycourses, timing } from "./data";
+
+import { Button } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
+import Grid from "@mui/material/Grid";
+import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
-import { Button } from "@mui/material";
 import Pagebanner from "../comman/pagebanner";
-import axios from "../../api/axios";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import Select from "@mui/material/Select";
+import TextField from "@mui/material/TextField";
 import { Validation } from "../Validation/validate";
+import axios from "../../api/axios";
 import swal from "sweetalert";
 import { useAuthContextProvider } from "../../Context/Authcontext";
+import { useNavigate } from "react-router-dom";
 
 const Addmission = () => {
   const user = useAuthContextProvider();
@@ -202,6 +204,7 @@ const Addmission = () => {
             <Grid item xs={4}>
               <FormControl>
                 <FormLabel id="gender">Gender</FormLabel>
+
                 <RadioGroup
                   row
                   name="gender"
