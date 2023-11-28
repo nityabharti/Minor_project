@@ -35,42 +35,42 @@ const reviewsData = [
     userName: "Alice Johnson",
     profilePic: img4,
   },
-  {
-    reviewText: "Highly recommended. Excellent teaching methodology.",
-    userName: "Alice Johnson",
-    profilePic: img5,
-  },
-  {
-    reviewText: "Highly recommended. Excellent teaching methodology.",
-    userName: "Alice Johnson",
-    profilePic: img6,
-  },
+  // {
+  //   reviewText: "Highly recommended. Excellent teaching methodology.",
+  //   userName: "Alice Johnson",
+  //   profilePic: img5,
+  // },
+  // {
+  //   reviewText: "Highly recommended. Excellent teaching methodology.",
+  //   userName: "Alice Johnson",
+  //   profilePic: img6,
+  //},
 ];
 
 const Reviews = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
+  //   const settings = {
+  //     dots: true,
+  //     infinite: true,
 
-    autoPlay: true,
-    autoPlaySpeed: 2000,
+  //     autoPlay: true,
+  //     autoPlaySpeed: 2000,
 
-    swipeable: false,
-    draggable: false,
+  //     swipeable: false,
+  //     draggable: false,
 
-    dotListClass: "custom-dot-list-style",
-    itemClass: "carousel-item-padding-40-px",
-    containerClass: "carousel-container",
-    slidesToShow: 2, // Display two cards at a time
-    slidesToScroll: 2, // Scroll two cards at a time
-  };
+  //     dotListClass: "custom-dot-list-style",
+  //     itemClass: "carousel-item-padding-40-px",
+  //     containerClass: "carousel-container",
+  //     slidesToShow: 2, // Display two cards at a time
+  //     slidesToScroll: 2, // Scroll two cards at a time
+  //   };
   return (
     <div className="review-container">
-      <Slider {...settings}>
-        {reviewsData.map((review, index) => (
-          <Review key={index} {...review} />
-        ))}
-      </Slider>
+      {/* <Slider {...settings}> */}
+      {reviewsData.map((review, index) => (
+        <Review key={index} {...review} />
+      ))}
+      {/* </Slider> */}
     </div>
   );
 };

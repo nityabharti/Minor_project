@@ -1,33 +1,39 @@
-import * as React from "react";
 import "./course.css";
+
+import * as React from "react";
+
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import img1 from "../../assets/course_1.jpg";
+import img2 from "../../assets/course_2.jpg";
+import img3 from "../../assets/couse_3.jpg";
+import img4 from "../../assets/course_4.jpg";
 
 const carddata = [
   {
-    imgUrl: "https://example.com/dca.jpg",
+    imgUrl: img1,
     title: "Diploma in Computer Applications (DCA)",
     description:
       "This diploma covers various aspects of computer applications including office automation tools, programming basics, database management, and more.",
   },
   {
-    imgUrl: "https://example.com/ctp.jpg",
+    imgUrl: img2,
     title: "Certified Training Professional (CTP)",
     description:
       "CTP program provides comprehensive training in various computer technologies, focusing on advanced programming languages, and system analysis.",
   },
   {
-    imgUrl: "https://example.com/ccna.jpg",
+    imgUrl: img3,
     title: "Cisco Certified Network Associate (CCNA)",
     description:
       "CCNA course offers knowledge about networking fundamentals,routing technologies, and more, essential for networking professionals.",
   },
   {
-    imgUrl: "https://example.com/webdev.jpg",
+    imgUrl: img4,
     title: "Web Development Bootcamp",
     description:
       "This bootcamp covers HTML, CSS, JavaScript, and modern web development frameworks, providing hands-on experience in building web applications.",

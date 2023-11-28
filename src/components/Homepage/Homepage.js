@@ -17,9 +17,9 @@ const Homepage = () => {
     <>
       <Navbar />
       <Slider />
-      <Reviews />
 
       <div className="homepage">
+        <Reviews />
         <Aboutus />
         <Course />
       </div>
