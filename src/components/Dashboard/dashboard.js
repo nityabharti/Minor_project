@@ -1,12 +1,15 @@
+import "./dashboard.css";
+
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
-import { Outlet, NavLink, useNavigate } from "react-router-dom";
+
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
-import "./dashboard.css";
-import { useAuthContextProvider } from "../../Context/Authcontext";
+import SubjectIcon from "@mui/icons-material/Subject";
 import axios from "../../api/axios";
 import swal from "sweetalert";
+import { useAuthContextProvider } from "../../Context/Authcontext";
 
 const Dashboard = () => {
   const user = useAuthContextProvider();
@@ -58,6 +61,10 @@ const Dashboard = () => {
               <NavLink to="/dashboard/addfee" className="btns">
                 <CurrencyRupeeIcon fontSize="large" />
                 <p>Add Fee </p>
+              </NavLink>
+              <NavLink to="/dashboard/course" className="btns">
+                <SubjectIcon fontSize="large" />
+                <p>Courses </p>
               </NavLink>
               <button
                 className="btns logbtns"

@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Pagebanner from "../comman/pagebanner";
-import { useNavigate } from "react-router-dom";
-import swal from "sweetalert";
-import { useAuthContextProvider } from "../../Context/Authcontext";
-
 import "./students.css";
 
+import React, { useEffect, useState } from "react";
+
+import Pagebanner from "../comman/pagebanner";
 import Studentcard from "./studentcard";
 import axios from "../../api/axios";
+import swal from "sweetalert";
+import { useAuthContextProvider } from "../../Context/Authcontext";
+import { useNavigate } from "react-router-dom";
 
 const Students = () => {
   const user = useAuthContextProvider();

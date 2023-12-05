@@ -4,7 +4,7 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div className="main_about">
+    <div className="main_about" id="about">
       <div className="about_card">
         <div className="title_aboutus">
           <img

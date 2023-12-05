@@ -35,6 +35,7 @@ const responsive = {
 const Slider = () => {
   return (
     <Carousel
+      id="home"
       infinite={true}
       autoPlay={true}
       autoPlaySpeed={2000}

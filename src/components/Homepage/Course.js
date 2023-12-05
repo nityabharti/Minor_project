@@ -85,7 +85,7 @@ const CourseCard = ({ imgUrl, title, description }) => {
 
 const Course = () => {
   return (
-    <div className="course_main">
+    <div className="course_main" id="courses">
       {carddata.map((data, key) => {
         return (
           <CourseCard

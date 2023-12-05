@@ -7,8 +7,9 @@ import img1 from "../../assets/review_1.jpg";
 import img2 from "../../assets/review_2.jpg";
 import img3 from "../../assets/review_3.jpg";
 import img4 from "../../assets/review_4.jpg";
-import img5 from "../../assets/review_5.jpg";
-import img6 from "../../assets/review_6.jpg";
+
+// import img5 from "../../assets/review_5.jpg";
+// import img6 from "../../assets/review_6.jpg";
 
 // import ReviewSlider from "./ReviewSlider";
 

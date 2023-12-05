@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a href="contact">contact us</a>
+            <a href="#contact">contact us</a>
           </li>
           <li>
             <button

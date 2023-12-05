@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <div className="contact-info">
         {/* Images and contact information */}
         <img
