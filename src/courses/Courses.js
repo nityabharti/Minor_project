@@ -1,5 +1,3 @@
-import "./courses.css";
-
 import { Outlet } from "react-router-dom";
 import Pagebanner from "../components/comman/pagebanner";
 import React from "react";

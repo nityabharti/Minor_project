@@ -1,12 +1,16 @@
 export const studentdata = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Nitya",
     rollNo: "B12345",
     courseName: "Web Development Bootcamp",
     startDate: "2023-01-01",
     completionDate: "2023-02-28",
     completedTopics: ["HTML", "CSS", "JavaScript"],
+    courseDuration: "120",
+    completed: "120",
+    remaining: "0",
+    remainingTopics: "None",
   },
   {
     id: 2,
@@ -16,15 +20,25 @@ export const studentdata = [
     startDate: "2023-01-05",
     completionDate: "2023-03-15",
     completedTopics: ["HTML", "CSS", "JavaScript", "React"],
+    courseDuration: "90",
+    completed: "90",
+    remaining: "0",
+    remainingTopics: "None",
   },
   {
     id: 3,
     name: "Bob Johnson",
     rollNo: "B12347",
-    courseName: "Full Stack Development",
+    courseName: "CCNA",
     startDate: "2023-01-10",
     completionDate: null,
     completedTopics: [],
+    courseDuration: "150",
+    completed: "50",
+    remaining: "100",
+    remainingTopics: [
+      "Routing Technologies, WAN Technologies, Infrastructure security",
+    ],
   },
   {
     id: 4,
@@ -34,6 +48,9 @@ export const studentdata = [
     startDate: "2023-01-15",
     completionDate: "2023-04-01",
     completedTopics: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+    courseDuration: "110",
+    completed: "120",
+    remaining: "0",
+    remainingTopics: "None",
   },
-  // Add more students as needed
 ];
